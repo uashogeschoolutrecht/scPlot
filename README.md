@@ -3,7 +3,7 @@
 # Overview
 scPlot is a tool for plotting genes and researching them in an interactive way. You can also easily get protein or nucleotide sequences of any gene on the plot. Just type in the gene identification and the tool will automaticly provide an fasta file with the sequence. 
 
-#Functions
+# Functions
 
 - MakeGenPlot() Plots the genome and shows products or gene identifications of the genes.
 - GetSequenceNow() Gets the sequence of a gene and makes an fasta file for it.
