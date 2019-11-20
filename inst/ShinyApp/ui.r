@@ -1,6 +1,4 @@
 library(shiny)
-library(scPlot)
-
 
 shinyUI(fluidPage(
   titlePanel(title = "Make Genomic Plots & Get Gene Sequences"),

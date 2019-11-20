@@ -39,7 +39,7 @@ Make Genomic Plots Function
 }
 \examples{
 MakeGenPlot(g_url = "ftp://ftp.ncbi.nlm.nih.gov/genomes/all/GCF/002/277/835/GCF_002277835.1_ASM227783v1/GCF_002277835.1_ASM227783v1_genomic.gtf.gz",
-           dl_folder = "C:/Users/boazk/Downloads",
+           dl_folder = "C:/Users/Downloads",
            chr_id = "NZ_NQOT01000381.1",
            gen_name = "Flavobacterium_ir1",
            start = 80000,

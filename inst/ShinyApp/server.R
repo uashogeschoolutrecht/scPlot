@@ -1,5 +1,6 @@
+
+source("helpers.R")
 library(shiny)
-library(scPlot)
 
 shinyServer(function(input, output, session){
 

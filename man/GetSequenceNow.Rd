@@ -27,7 +27,7 @@ Function to get the sequence of a gene in fasta format
 }
 \examples{
 GetSequenceNow(gen_name = "Flavobacterium_ir1",
-               dl_folder = "C:/Users/boazk/Downloads",
+               dl_folder = "C:/Users/Downloads",
                gen_id = "B4N84_RS04735",
                fasta_name = "Bladibladibla",
                protein = TRUE)
