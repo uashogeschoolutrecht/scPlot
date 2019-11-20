@@ -21,4 +21,3 @@ As input you need 3 things at least:
 
 - Preferably a "_genomic.gtf.gz" url from an RefSeq or GenBank assembly from the NCBI website. "_genomic.gff.gz" will also work, but won't show any products in the plot. With the ".gtf" of ".gff" url it will automaticly also download and read the "_genomic.fna.gz" file for the sequences. 
 
-
