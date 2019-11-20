@@ -5,15 +5,13 @@ shinyUI(fluidPage(
   sidebarLayout(
     sidebarPanel(("Input: (Hit 'Plot my genome' to create/update your plot.)"),
 
-                 textInput(inputId = "dl_folder", label = "Please enter the path to the download folder."),
-
                  textInput(inputId = "gen_name", label = "Please enter genome name."),
 
                  textInput(inputId = "g_url", label = "Please enter the .gtf or .gff assembly link from the NCBI website."),
 
                  actionButton("button", "Plot my genome"),
                  
-                 textInput(inputId = "chr_id", label = "Enter chromosome. After filling in the three boxes above, you can see the chromosomes to choose from in the 'Chromosome List' tab.", ""),
+                 textInput(inputId = "chr_id", label = "Enter chromosome. After filling in the two boxes above, you can see the chromosomes to choose from in the 'Chromosome List' tab.", ""),
                  
                  radioButtons(inputId = "endR", label = "Select range length",
                               choices = list("0 - 10.000", "0 - 50.000", "0 - 200.000", "100.000 - 1 million", "800.000 - 10 million")),
@@ -21,7 +19,7 @@ shinyUI(fluidPage(
                  sliderInput(
                    inputId = "ranges", label = "Please select the plot ranges",
                    min = 0, max = 10000, value = c(1, 5000), step = 5),
-
+                 
                  radioButtons(inputId = "show_gene_id", label = "Show gene identification (TRUE) or products (FALSE)?",
                               choices = list("FALSE", "TRUE")),
                  
@@ -36,9 +34,12 @@ shinyUI(fluidPage(
 
     mainPanel(("Output"),
               tabsetPanel(type = "tab",
-                          tabPanel("My plot", plotOutput("myplot")),
-                          tabPanel("Chromosome List", chromz <- textOutput("chrom")),
-                          tabPanel("Get sequence", textOutput("fasta"))))
+                          tabPanel("My plot", plotOutput("myplot"),
+                                   downloadButton(outputId = "Download",label = "Download Plot")),
+                          tabPanel("Chromosome List", textOutput("chrom")),
+                          tabPanel("Get sequence", textOutput("fasta"),
+                                   downloadButton(outputId = "Download2",label = "Download Fasta")
+                                   )))
 
 )))
 

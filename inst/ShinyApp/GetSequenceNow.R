@@ -149,7 +149,7 @@ GetSequenceNow <-
 
     # Write sequence in fasta file and make it nice and clean
     FF2 <- str_sub(FF, end = -5)
-    pathS <- paste0(FF2, "_", gen_id, P, ".fna")
+    pathS <- paste0(FF2, "_", gen_id, ".fna")
     utils::write.table(
       seqfrag2,
       file = pathS,
@@ -255,7 +255,6 @@ GetSequenceNow <-
     text <- print(outp)
 
     return(text)
-
 
   }
 
