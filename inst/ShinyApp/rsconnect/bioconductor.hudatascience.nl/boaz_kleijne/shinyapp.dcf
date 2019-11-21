@@ -5,8 +5,8 @@ account: boaz_kleijne
 server: bioconductor.hudatascience.nl
 hostUrl: http://bioconductor.hudatascience.nl:84/__api__
 appId: 20
-bundleId: 73
+bundleId: 75
 url: http://bioconductor.hudatascience.nl:84/content/20/
-when: 1574176086.53668
+when: 1574326029.57169
 asMultiple: FALSE
 asStatic: FALSE

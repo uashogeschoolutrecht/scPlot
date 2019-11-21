@@ -243,8 +243,7 @@ MakeGenPlot <-
       transcriptAnnotation = "symbol",
       background.panel = "#FFFEDB",
       background.title = "lightblue",
-      shape = "arrow"
-    )
+      shape = "arrow")
 
     # Adding a sequence track.
     # First tidy fasta file to right chromosome names.
@@ -296,7 +295,9 @@ MakeGenPlot <-
       add53 = TRUE,
       add35 = TRUE,
       littleTicks = TRUE,
-      cex = 0.8
+      cex = 1.4,
+      title.width = 1.5,
+      
     )
 
     #Show chromosomes?

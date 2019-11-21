@@ -77,7 +77,7 @@ shinyServer(function(input, output, session){
      filename = function(){
          base::paste0(input$gen_name, "_", input$chr_id, "_", input$ranges[1], "-", input$ranges[2], ".png")},
                                     content = function(file){
-                                        png(file)
+                                        png(file, width = 1280, height = 640, res = 100, pointsize = 15)
                                         plotnu()
                                         dev.off()
                                     })
